@@ -1,0 +1,55 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* brand colors */
+  --snitap-sun: #FFCD1E;
+  --snitap-sky-mid:#06B6D4;
+  --snitap-sky-light:#67E8F9;
+  --snitap-joy-mid:#DB2777;
+  --snitap-joy-light:#F472B6;
+  --snitap-leaf-mid:#16A34A;
+
+  /* Base */
+  --text: #000000;
+  --highlights: #000000;
+  --background: #fafafa
+
+  /* Fonts */
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-syne: 'Syne', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+
+  /* Font sizes */
+  --text-xl: 4rem;
+  --text-lg: 2.5rem;
+  --text-base: 1rem;
+  --text-sm: .875rem;
+  --text-xm: .75rem;
+
+  /* Font Weight */
+  --fw-bold: 700;
+  --fw-medium: 500;
+
+  /* Typography */
+  --heading-1: var(--text-xl)/1.25 var(--fw-bold) var(--font-syne);
+  --heading-2: var(--text-lg)/1.2 var(--fw-bold) var(--font-syne);
+  --button-label: var(--text-base)/1.5 var(--fw-medium) var(--font-montserrat);
+  --span: var(--text-sm)/1.5 var(--fw-medium) var(--font-montserrat);
+  --counter: var(--text-xm)/1.3 var(--fw-medium) var(--font-inter);
+}
+
+html, button {
+  font: var(--span);
+}
+
+h1 {
+  font: var(--heading-1);
+}
+
+h2 {
+  font: var(--heading-2);
+}
