@@ -33,6 +33,5 @@ header {
     align-items: center;
     font: var(--counter);
     color: var(--text);
-
   }
 }
