@@ -1,0 +1,37 @@
+header {
+  max-width: 80rem;
+  width: 100%;
+  padding: 1.25rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {	
+    width: 2rem;
+    height: 2rem;
+    transition: transform 500ms;
+  }
+  img[src*="logo"]:hover {
+    transform: rotate(90deg);
+  }
+  img[src*="bag"]:hover {
+    transform: rotate(-30deg);
+  }
+  a {
+    position: relative;
+  }
+  a span {
+    position: absolute;
+    top: -.5rem;
+    right: -.5rem;
+    background-color: var(--snitap-sun);
+    border-radius: 50%;
+    width: 1.25rem;
+    height: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: var(--counter);
+    color: var(--text);
+
+  }
+}
