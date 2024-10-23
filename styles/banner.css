@@ -19,7 +19,7 @@
 
     animation: bg-gradient 5s ease infinite;
   }
-  @media (max-width: 45rem) {
+  @media (max-width: 25.75rem) {
     & {
       padding-block: 4rem;
     }
