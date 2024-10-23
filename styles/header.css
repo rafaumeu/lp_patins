@@ -35,7 +35,7 @@ header.top {
     color: var(--text);
   }
 
-  @media (min-width: 25.75) {
+  @media (max-width: 48rem) {
     img {
       width: 3.2rem;
       height: 3.2rem;
