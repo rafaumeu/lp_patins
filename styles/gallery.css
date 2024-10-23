@@ -91,7 +91,7 @@ section.gallery {
     }
   }
 
-  @media (max-width: 48rem) {
+  @media (max-width: 45rem) {
     & {
       padding: 4rem 3.2rem;
       & header {
