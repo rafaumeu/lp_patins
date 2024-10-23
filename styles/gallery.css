@@ -114,7 +114,7 @@ section.gallery {
       }
     }
   }
-  @media (min-width: 46.08rem) {
+  @media (max-width: 46.08rem) {
     & {
       padding: 3.84rem 3.072rem;
       & header {
