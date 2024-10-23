@@ -107,29 +107,29 @@ section.hero {
       animation: slideIn 2s 800ms ease both;
     }
   }
-  @media screen and (max-width: 25.75rem) {
+  @media screen and (min-width: 25.75) {
    & {
      flex-direction: column-reverse;
      padding: 6.25rem 5rem;
      & > div:nth-child(2) {
-      max-width: 25.75rem;
+      min-width: 25.75;
       height: 48rem;
      }
      & h1 {
-      max-width: 25.75rem;
+      min-width: 25.75;
       font-size: 4rem;
       & div {
         height: 5rem;
       }
     }
      & > div:nth-child(1) > div{
-      max-width: 25.75rem;
+      min-width: 25.75;
       height: 30rem;
     }
    }
    & .buttons {
     flex-direction: column-reverse;
-    max-width: 25.75rem;
+    min-width: 25.75;
     font-size: 1.4rem;
     & .button {
       gap: 1.2rem;
