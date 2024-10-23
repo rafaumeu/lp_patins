@@ -111,9 +111,9 @@ footer {
       }
     }
   }
-  @media (max-width: 48remrem) {
+  @media (max-width: 48rem) {
     & {
-      max-width: 48remrem;
+      max-width: 48rem;
       display: flex;
       padding: 4.8rem 2.4rem 2.4rem;
       flex-direction: column;
