@@ -19,6 +19,34 @@
 
     animation: bg-gradient 5s ease infinite;
   }
+  @media (max-width: 48rem) {
+    & {
+      padding-block: 4rem;
+    }
+    & .rolling {
+      gap: 2.4rem;
+      & img {
+        height: 1.6rem;
+      }
+    }
+    & .scroller {
+      height: 4.4rem;
+    }
+  }
+  @media (max-width: 30rem) {
+    & {
+      padding-block: 1.5rem;
+    }
+    & .rolling {
+      gap: 1rem;
+      & img {
+        height: 1rem;
+      }
+    }
+    & .scroller {
+      height: 2.75rem;
+    }
+  }
 }
 @keyframes bg-gradient {
   50% {

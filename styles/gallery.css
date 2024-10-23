@@ -3,25 +3,29 @@ section.gallery {
   max-width: 80rem;
   padding: 2.5rem 2rem;
   margin-inline: auto;
-  & header {
+  
+  header {
     text-align: center;
   }
-  & header span {
+
+  header span {
     font: var(--span);
   }
-  & img {
+
+  img {
     width: 100%;
     height: auto;
   }
-  & .content {
+
+  .content {
     margin-top: 2rem;
     display: grid;
- 
     grid-template-areas: 
-    "A B B"
-    "C C D";
+      "A B B"
+      "C C D";
     gap: 2.5rem;
-    & figure {
+
+    figure {
       position: relative;
       border-radius: 2.5rem;
       overflow: hidden;
@@ -29,22 +33,26 @@ section.gallery {
       animation: image-appear linear backwards;
       animation-timeline: view();
       animation-range: 100px 300px;
-      & [data-delay] {
+
+      [data-delay] {
         animation-range: 150px 350px;
       }
-      & > img {
+
+      > img {
         height: 25rem;
         object-fit: cover;
         transition: scale 500ms;
       }
+
       &:hover {
-        & > img {
+        > img {
           transform: scale(1.1);
         }
-        & figcaption {
+        figcaption {
           transform : translateY(0);
         }
       }
+
       &:nth-child(1) {
         grid-area: A;
       }
@@ -59,37 +67,101 @@ section.gallery {
       }
     }
   }
-  & figcaption {
+
+  figcaption {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: .5rem;
-
     font: var(--span);
     color: white;
     position: absolute;
-
     bottom: 0;
     width: 100%;
-
     padding: 1.5rem 2rem;
-
     transform: translateY(100%);
     transition: transform 500ms;
+    background: linear-gradient(to top, rgb(0 0 0/ 0.64), rgb(0 0 0/ 0));
 
-    background: linear-gradient(
-      to top, 
-      rgb(0 0 0/ 0.64),
-      rgb(0 0 0/ 0)
-    );
-      & > img {
+    > img {
       width: 2rem;
       aspect-ratio: 1/1;
       object-fit: cover;
       border-radius: 50%;
     }
   }
+
+  @media (max-width: 48rem) {
+    & {
+      padding: 4rem 3.2rem;
+      & header {
+        & span{
+          font-size: 1.25rem;
+        }
+        & h2 {
+          font-size: 3.5rem;
+        }
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+      & figure {
+        > img {
+            height: 40rem;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 46.08rem) {
+    & {
+      padding: 3.84rem 3.072rem;
+      & header {
+        & span{
+          font-size: 1.2rem;
+        }
+        & h2 {
+          font-size: 3.36rem;
+        }
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 2.304rem;
+      & figure {
+        > img {
+            height: 38.4rem;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 30rem) {
+    & {
+      padding: 2.5rem 2rem;
+      & header {
+        & span{
+          font-size: .78rem;
+        }
+        & h2 {
+          font-size: 2.18rem;
+        }
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 1,5rem;
+      & figure {
+        > img {
+            height: 25rem;
+          }
+        }
+      }
+    }
+  }
 }
+
 @keyframes image-appear {
   from {
     opacity: 0;

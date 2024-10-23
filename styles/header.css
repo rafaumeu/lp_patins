@@ -34,4 +34,24 @@ header.top {
     font: var(--counter);
     color: var(--text);
   }
+
+  @media (max-width: 48rem) {
+    img {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  }
+  @media (max-width: 46.08rem) {
+    img {
+      width: 3.072rem;
+      height: 3.072rem;
+    }
+  }
+
+  @media (max-width: 30rem) {
+    img {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
 }

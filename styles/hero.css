@@ -107,6 +107,135 @@ section.hero {
       animation: slideIn 2s 800ms ease both;
     }
   }
+  @media screen and (max-width: 48rem) {
+   & {
+     flex-direction: column-reverse;
+     padding: 6.25rem 5rem;
+     & > div:nth-child(2) {
+      max-width: 48rem;
+      height: 48rem;
+     }
+     & h1 {
+      max-width: 48rem;
+      font-size: 4rem;
+      & div {
+        height: 5rem;
+      }
+    }
+     & > div:nth-child(1) > div{
+      max-width: 48rem;
+      height: 30rem;
+    }
+   }
+   & .buttons {
+    flex-direction: column-reverse;
+    max-width: 48rem;
+    font-size: 1.4rem;
+    & .button {
+      gap: 1.2rem;
+      &.buy {
+        padding: 2.4rem 4.8rem;
+        &.shadow > img {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
+      &.play span {
+        padding: 2.4rem;
+        & img {
+          width: 2.5rem;
+        }
+      }
+    }
+   }
+    
+  }
+
+  @media screen and (max-width: 46.08rem) {
+    & {
+      flex-direction: column-reverse;
+      padding: 6rem 4.8rem;
+      & > div:nth-child(2) {
+       max-width: 46.08rem;
+       height: 46.08rem;
+      }
+      & h1 {
+       max-width: 46.08rem;
+       font-size: 3.84rem;
+       & div {
+         height: 4.8rem;
+       }
+     }
+      & > div:nth-child(1) > div{
+       max-width: 46.08rem;
+       height: 28.8rem;
+     }
+    }
+    & .buttons {
+     flex-direction: column-reverse;
+     max-width: 46.08rem;
+     font-size: 1.344rem;
+     & .button {
+       gap: 1.152rem;
+       &.buy {
+         padding: 2.304rem 4.608rem;
+         &.shadow > img {
+           width: 2.4rem;
+           height: 2.4rem;
+         }
+       }
+       &.play span {
+         padding: 2.304rem;
+         & img {
+           width: 2.4rem;
+         }
+       }
+     }
+    }
+     
+   }
+  @media (max-width: 30rem) {
+    & {
+      gap: 2rem;
+      padding: 1.5rem 1rem;
+      & div:nth-child(2){
+        max-width: 19.5rem;
+        height: 19.5rem;
+      }
+      & h1 {
+        max-width: 19.5rem;
+        font-size: 2rem;
+        & div {
+          height: 2.5rem;
+        }
+      }
+      & > div:nth-child(1) > div{
+        max-width: 19.5rem;
+        height: 10.5rem;
+      }
+    }
+    & .buttons {
+      flex-direction: column-reverse;
+      max-width: 19.5rem;
+      font-size: .875rem;
+      & .button {
+        gap: .75rem;
+        &.buy {
+          padding: 1.5rem 3rem;
+          &.shadow > img {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+        &.play span {
+          padding: 1.5rem;
+          & img {
+            width: 1.5rem;
+          }
+        }
+      }
+     }
+  }
 }
 
 @keyframes slideIn {
